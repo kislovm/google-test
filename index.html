@@ -10,13 +10,13 @@ some text
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var link1 = document.createElement('link');
-        link1.setAttribute('href', '/1.css');
+        link1.setAttribute('href', '1.css');
         link1.setAttribute('rel', 'stylesheet');
         document.body.appendChild(link1);
 
         setTimeout(function() {
             var link2 = document.createElement('link');
-            link2.setAttribute('href', '/2.css');
+            link2.setAttribute('href', '2.css');
             link2.setAttribute('rel', 'stylesheet');
 
             document.body.insertBefore(link2, link1);
@@ -24,6 +24,7 @@ some text
         }, 100);
     });
 </script>
+<link href="3.css" rel="stylesheet">
 </body>
 
 </html>
